@@ -202,7 +202,7 @@
 %Cooperative diversity, decode and forward, piecewise linear
 %\end{IEEEkeywords}
 
-
+	
 
 % For peer review papers, you can put extra information on the cover
 % page as needed:
@@ -227,26 +227,25 @@ The coordinates of the points of contact of the circle and the triangle are:
 		\frac {-366\sqrt{74}-406\sqrt{122}-488\sqrt{32}}{122(\sqrt{74}+\sqrt{32}+\sqrt{122})}\\
 		\frac {-610\sqrt{74}-170\sqrt{122}+732\sqrt{32}}{122(\sqrt{74}+\sqrt{32}+\sqrt{122})}
                 }
-		{\scriptsize _{\, from \;1.5.8}}\\
+		{{\, \text{from} \;1.5.8}}\\
 	 \vec{E}_3 &= \myvec{
                  \frac{-111-20\sqrt{37}+5\sqrt{2257}}{74} \\
          \frac{185+28\sqrt{37}-7\sqrt{2257}}{74}
     }
-                {\scriptsize _{\, from \;1.5.9}}\\
+		{{\, \text{from} \;1.5.9}}\\
 	\vec{F}_3 &= \myvec{
       \frac{-2-\sqrt{37}+\sqrt{61}}{2}\\
       \frac{-6-\sqrt{37}+\sqrt{61}}{2}
     }
-	{\scriptsize _{\, from \; 1.5.9}}
+	{{\, \text{from} \; 1.5.9}}
   \end{align}
 
 Now we have to find m,n and p.
-We can find that by using the formula for magnitude of a vector:\\ 
-{\vspace{0.4cm}}
-Magnitude of Vector
-$${AE_3=\sqrt{{(\vec{E_3}-\vec A)}^{\top}{(\vec{E_3}-\vec A)}}$$
+We can find that by using the formula for magnitude of a vector:
 
-\begin{align}
+\begin{enumerate}
+\item  ${AE_3=\sqrt{{(\vec{E_3}-\vec A)}^{\top}{(\vec{E_3}-\vec A)}}$
+\item \begin{align}
 	\vec{E_3}-\vec A&=\myvec{-0.136-1 \\ 
        -2.136+1}\\
 \implies	{AE_3}&=\sqrt{\myvec{-1.136 &
@@ -255,7 +254,7 @@ $${AE_3=\sqrt{{(\vec{E_3}-\vec A)}^{\top}{(\vec{E_3}-\vec A)}}$$
        -1.136}} \\
 	&= 1.607 
 \end{align}
-\begin{align}
+\item \begin{align} 
 	\vec{F_3}-\vec A&=\myvec{0.066-1 \\ 
        0.308+1}\\
 \implies	{AF_3}&=\sqrt{\myvec{-0.934 &
@@ -265,8 +264,8 @@ $${AE_3=\sqrt{{(\vec{E_3}-\vec A)}^{\top}{(\vec{E_3}-\vec A)}}$$
 	&=1.607
 \end{align}
 $\therefore {AE_3}= {AF_3}=m $ verified.
-\begin{align}
-	\vec{D_3}-\vec B&=\myvec{ -3.367 +4\\ 
+\item \begin{align}
+ 	\vec{D_3}-\vec B&=\myvec{ -3.367 +4\\ 
                 -0.967 -6}\\
 \implies	{BD_3}&=\sqrt{\myvec{ 0.633  &
        6.967}
@@ -274,7 +273,7 @@ $\therefore {AE_3}= {AF_3}=m $ verified.
        6.967}} \\
 	&=6.995 
 \end{align}
-\begin{align}
+\item \begin{align}
 	\vec{F_3}-\vec B&=\myvec{ 0.066+4 \\
          0.308 -6}\\                              
 \implies	{BF_3}&=\sqrt{\myvec{ 4.066 &
@@ -284,7 +283,7 @@ $\therefore {AE_3}= {AF_3}=m $ verified.
 	&=6.995 
 \end{align}           
 $\therefore {BD_3}= {BF_3}=n $ verified.
-\begin{align}
+\item \begin{align}
 	\vec{D_3}-\vec C&=\myvec{ -3.367 + 3\\
        -0.967 + 5}\\
 \implies	{CD_3}&=\sqrt{\myvec{ -0.367&
@@ -293,7 +292,7 @@ $\therefore {BD_3}= {BF_3}=n $ verified.
        4.033}} \\
 	&=4.0499 
 \end{align}           
-\begin{align}
+\item \begin{align}
 	\vec{E_3}-\vec C&=\myvec{ -0.136 + 3\\ 
        -2.136+5}\\
 \implies	{CE_3}&=\sqrt{\myvec{ 2.864 &
@@ -303,6 +302,7 @@ $\therefore {BD_3}= {BF_3}=n $ verified.
 	&= 4.0499            
 \end{align}
 $\therefore {CD_3}= {CE_3}=p$  verified.
+\end{enumerate}
 \end{document}
 
 
